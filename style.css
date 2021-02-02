@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+html{
+	font-size: 62.5%
+}
+h1{
+	font-size: 2.6rem;
+}
+li, button ,label ,input ,p{
+	font-size: 2.6rem;
+}
+h2{
+	font-size: 4.6rem;
+
+}
+h3{
+	font-size: 3.6rem;
+	font-weight: normal;
+}
+h4,h5{
+	font-size: 2.6rem; 
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+button{
+	padding: 2rem 6rem;
+	border:none;
+	color: white;
+	background-color: blue;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	animation: buttonAnimation 3s infinite alternate;
+}
+button:hover {
+background: #27394e;
+font-size: 2.6rem;
+}
+.main-head{
+	background-color: #131c27;
+	color: white;
+}
+nav{
+	min-height: 10vh;
+	display: flex;
+	width:90%;
+	margin:auto;
+	align-items: center;
+	flex-wrap: wrap;
+}
+nav ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	padding: 2rem;
+}
+#logo{
+	display: flex;
+     flex:2 1 40rem;
+     font-family: 'Pattaya', sans-serif;
+}
+.hero{
+	min-height: 90vh;
+	background:url("./images/Rara.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center; 
+	color: black;
+	display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
+}
+.hero h3 {
+padding: 5rem;
+}
+#location{
+	min-height: 100vh;
+	background:url("./images/pashupatinath.png");
+	background-position: center;
+	background-size: center;
+	display: flex;
+	align-items: center;
+	color: black;
+	position: relative;
+
+}
+.location-head{
+	width: 90%;
+	margin:auto;
+}
+.location-head h2{
+	padding: 1rem 0rem;
+	text-decoration: underline;
+	text-decoration-thickness: 0.5rem;
+}
+.location-head h3{
+	padding: 4rem 0rem;
+
+	background-clip: text;
+}
+.cloud{
+	position: absolute;
+	top:0%;
+	left: : 0%
+	width:30%;
+	height: 30vh;
+	animation: cloudsAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-1{
+
+}
+.moving-cloud-2{
+top:20%;
+z-index: -1;
+opacity: 0.5%;
+}
+.benefits-head{
+	background: #343c44;
+	padding: 3rem;
+	min-height: 30vh;
+	text-align: center;
+color: white;
+}
+ 
+.benefits-head h3{
+   padding: 1rem;
+ }
+
+.cards{
+ 	width: 80%;
+ 	margin: auto;
+ 	display: flex;
+ 	min-height: 70vh;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+ }
+
+.card{
+	text-align: center; 
+	flex:1 1 25rem;
+	min-height: 40vh;
+	margin: 2rem 5rem;
+	box-shadow: 0px 10px 10px rgb(0,0,0,0.1), 0px 20px 20px rgb(0,0,0,0.1) ;
+}
+
+.card img{
+	width: 100px;
+}
+
+
+
+@keyframes buttonAnimation{
+	0%{
+		background: lightblue;
+	}
+	25%{
+		background:rgb(35, 98, 119);
+	}
+   100%{
+   background: rgb(99,35,119);
+   }
+}
+/*@keyframes  cloudsAnimation{
+	from{
+		transform: translate(10%,10%);
+	}
+	to{
+		transform: translate(0%,0%);
+	}
+
+}*/
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    float: center;
+  }
+  #logo {
+  	display: flex;
+  	justify-content: center;
+    padding: 1rem;
+  }
+  .cloud {
+  	height: 40rem;
+  }
+  .moving-cloud-1 {
+  	z-index: -1;
+
+  }
+.moving-cloud-2{
+	z-index: -2;
+}
