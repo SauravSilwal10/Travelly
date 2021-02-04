@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
+	
 }
 html{
 	font-size: 62.5%
@@ -45,6 +46,9 @@ font-size: 2.6rem;
 .main-head{
 	background-color: #131c27;
 	color: white;
+	position: sticky;
+	top:0%;
+	z-index:3;
 }
 nav{
 	min-height: 10vh;
@@ -111,14 +115,12 @@ padding: 5rem;
 .cloud{
 	position: absolute;
 	top:0%;
-	left: : 0%
-	width:30%;
+	left: 0%;
+	width: 30%;
 	height: 30vh;
 	animation: cloudsAnimation 3s infinite alternate ease-in-out;
 }
-.moving-cloud-1{
 
-}
 .moving-cloud-2{
 top:20%;
 z-index: -1;
@@ -152,9 +154,80 @@ color: white;
 	margin: 2rem 5rem;
 	box-shadow: 0px 10px 10px rgb(0,0,0,0.1), 0px 20px 20px rgb(0,0,0,0.1) ;
 }
+.card h3{
+	padding: 2rem;
+}
 
 .card img{
-	width: 100px;
+	max-width: 15%;
+	margin: 2rem;
+}
+.card-icon{
+	background-color: darkslategrey;
+}
+#contact{
+	min-height: 100vh;
+	background: url("images/badimalika.jpg");
+	background-size:cover ;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-wrapper{
+	background: rgba(19,28,39,0.8);
+	width: 60%;
+	color: white;
+	border-radius:20px;
+}
+.form-head{
+text-align: center;
+padding: 4rem;
+}
+.name-form, .email-form{
+padding: 3rem;
+text-align: center;
+}
+.form-wrapper label{
+margin: 0rem 3rem;
+}
+.form-wrapper button{
+	padding: 2rem;
+	margin-top: 8rem;
+	width: 100%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+	padding: 1rem 3 rem;
+}
+
+footer{
+	color: white;
+	background: rgba(19,28,39,1 );
+}
+.footer-wrapper{
+	display: flex;
+	padding: 2rem;
+	width: 90%;
+	margin: auto;
+	min-height: 10vh;
+
+}
+footer h5{
+	flex: 1 1 40rem;
+}
+footer ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex: 1 1 40rem;
+
+
+}
+footer img{
+	height: 30px;
 }
 
 
@@ -186,24 +259,34 @@ color: white;
 
 
 @media screen and (max-width: 900px) {
-  html {
-    font-size: 45%;
-  }
-  nav {
-    float: center;
-  }
-  #logo {
-  	display: flex;
-  	justify-content: center;
-    padding: 1rem;
-  }
-  .cloud {
-  	height: 40rem;
-  }
-  .moving-cloud-1 {
-  	z-index: -1;
+	html {
+		font-size: 45%;
+	}
+	nav {
+		float: center;
+	}
+	#logo {
+		display: flex;
+		justify-content: center;
+		padding: 1rem;
+	}
+	.cloud {
+		height: 40rem;
+	}
+	.moving-cloud-1 {
+		z-index: -1;
 
-  }
-.moving-cloud-2{
-	z-index: -2;
+	}
+	.moving-cloud-2{
+		z-index: -2;
+	}
+	footer{
+		text-align: center;
+	}
+	.form-wrapper{
+		width: 100%;
+	}
+	footer h5{
+		padding-bottom: 3rem;
+	} 
 }
